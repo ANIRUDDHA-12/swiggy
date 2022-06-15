@@ -57,6 +57,7 @@ body{
 .card{
     padding: 5px;
     box-sizing: border-box;
+    
 }
 .card>img{
     width: 20vw;
