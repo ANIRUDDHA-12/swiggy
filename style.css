@@ -21,10 +21,11 @@ body{
     display: flex;
     padding: 15px;
     justify-content: space-between;
-    width: 40vw;   
+    width: 50vw;
+    
 }
 .welcome{
-    height: 50vh;
+    height: auto;
     width:100vw ;
     margin: auto;
     background-color: rgb(33, 31, 51);
@@ -57,6 +58,7 @@ body{
 .card{
     padding: 5px;
     box-sizing: border-box;
+
     
 }
 .card>img{
@@ -68,3 +70,44 @@ body{
     border: 1px solid rgb(224, 224, 224);
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
+@media only screen and (max-width:1024px){
+.card>p{
+    font-size: 15px !important;
+}
+.cards{
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+}
+@media only screen and (max-width:768px){
+    .nav>ul{
+        display: none;
+    }
+    .nav{
+        justify-content: left;
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width:500px) {
+   .cards{
+       grid-template-columns: 1fr !important;     
+   }
+   .card>img{
+       width: 55vw;
+   }
+   .card{
+       width: 60vw;
+       border: 1px solid rgb(221, 220, 220);
+   }
+   .welcome{
+       grid-template-columns:1fr;
+       width: 90vw;
+   }
+   .welcome>section>img{
+       width: 48.5vw;
+       height: 40vw;
+       margin: auto !important;
+   }
+}
+
+
